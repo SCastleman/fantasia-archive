@@ -33,7 +33,7 @@ jobs:
     - name: npm install and build
       run: |
         npm install
-        GH_TOKEN=env.GH_TOKEN npm run build
+        npm run build
     
     - name: Upload Linux Artifact
       if: ${{ matrix.os == 'ubuntu-latest' }}
